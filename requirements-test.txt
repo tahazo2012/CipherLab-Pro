@@ -1,0 +1,4 @@
+# TESTING dependencies: everything needed to run `python -m pytest` and measure coverage.
+-r requirements.txt
+pytest>=8
+coverage>=7

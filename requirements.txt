@@ -1,0 +1,11 @@
+# CipherLab Pro - RUNTIME dependencies (everything the installed application needs).
+# Internet is needed only to DOWNLOAD these once; the application never uses the network.
+# Standard-library modules (hashlib, hmac, secrets, json, sqlite3, ...) are NOT listed here.
+#
+# GUI: Qt for Python. "PySide6-Essentials" has QtCore/QtGui/QtWidgets (all the app imports).
+# Do NOT use the "PySide6" meta-package: it also pulls PySide6-Addons, PySide6-WebEngine (a whole Chromium
+# browser) and PySide6-Pdf - about 450 MB the application never uses.
+PySide6-Essentials>=6.6,<7
+
+# Cryptography: AES-GCM, PBKDF2-HMAC-SHA256 (and scrypt, if added later). Maintained by the PyCA project.
+cryptography>=42

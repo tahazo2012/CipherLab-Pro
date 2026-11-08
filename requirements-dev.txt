@@ -1,0 +1,4 @@
+# DEVELOPMENT dependencies: tests + packaging.
+-r requirements-test.txt
+# Builds the optional Windows/Linux executable (scripts/build_exe.*).
+pyinstaller>=6

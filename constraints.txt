@@ -1,0 +1,21 @@
+# Exact versions that CipherLab Pro's full test suite was run against (Python 3.12, Linux).
+# These pins need Python 3.11 or newer (pycparser 3.12 and coverage 7.17 require it). Tested on Python 3.12 only.
+# A CONSTRAINTS file never installs anything by itself - it only fixes the versions of packages that the
+# requirements files ask for, so every machine gets the same, tested set (and pip refuses surprises).
+#   pip install -r requirements.txt -c constraints.txt
+#   pip download -r requirements-dev.txt -c constraints.txt -d wheelhouse
+# To upgrade deliberately: install the new versions, run `python -m pytest`, then update this file.
+cffi==2.1.1
+pycparser==3.12
+cryptography==50.0.2
+PySide6_Essentials==6.12.0
+shiboken6==6.12.0
+pytest==9.2.0
+pluggy==1.7.0
+iniconfig==2.3.1
+packaging==26.3
+Pygments==2.21.0
+coverage==7.17.0
+pyinstaller==6.22.3
+pyinstaller-hooks-contrib==2026.9
+altgraph==0.17.5

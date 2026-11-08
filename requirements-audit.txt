@@ -1,0 +1,6 @@
+# SECURITY AUDIT tools. Install these in a SEPARATE virtual environment, not in the application's one:
+# pip-audit brings its own HTTP client (it must contact the PyPI advisory service), and the application
+# environment is deliberately free of network libraries.
+#   python -m venv .venv-audit && .venv-audit/bin/pip install -r requirements-audit.txt
+#   .venv-audit/bin/pip-audit --path .venv/lib/python3.12/site-packages        (Windows: .venv\Lib\site-packages)
+pip-audit>=2.7
